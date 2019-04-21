@@ -1,0 +1,50 @@
+<html lang="ja">
+    <link rel="stylesheet" href="/static/style.css">
+
+{{ if .list}}
+  {{range .list}}
+  <div class="space">
+
+    <div tyle="float:left;" class="image" >
+    <a href="https://www.youtube.com/watch?v={{.URL}}">
+      <img src="http://i.ytimg.com/vi/{{.URL}}/mqdefault.jpg" align="left">
+    </a>
+
+  </div>
+
+    <div class="text">
+
+      <a href="https://www.youtube.com/watch?v={{.URL}}">
+        <h3 class="title">{{.Title}}</h3>
+      </a>
+
+      <a href="https://www.youtube.com/channel/{{.ChannelID}}">
+        <p class="channel">{{.ChannelTitle}}</p>
+      </a>
+
+      <br clear="left">
+
+      <div class="description">{{.Description}}…</div>
+
+
+    </div>
+
+  </div>
+
+  <hr>
+
+  {{end}}
+
+  <div class = "button">
+    <button onclick="previous();">前の日</button>
+    <button id="next" onclick="next()">次の日</button>
+  </div>
+
+  {{else}}
+  <h1 class="found">この日のデータは存在していません</h1>
+  {{end}}
+
+
+  <script src="/static/index.js"></script>
+
+</html>

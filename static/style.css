@@ -1,0 +1,81 @@
+html{
+	background-color: #232323
+}
+
+.channel{
+	white-space: nowrap;
+}
+
+.title{
+	overflow: hidden;
+	min-width: 500px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+div{
+	word-break: break-all;
+}
+.text{
+	color: aliceblue;
+}
+
+a:link{
+	color: aliceblue;
+}
+
+a:visited{
+	color: darkgrey;
+}
+
+.button{
+	margin-left: 45%;
+}
+
+button{
+	display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #668ad8;
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+	border-radius: 3px;
+}
+
+button:disabled {
+  background-color:darkgrey ;
+  cursor: not-allowed;
+}
+
+.found{
+	font-size: 300%;
+	color: #FFF;
+}
+
+@media screen and (max-width: 750px){
+
+	.description{
+		text-indent:100%;
+	white-space:nowrap;
+	overflow:hidden;
+	}
+
+	img{
+		width: 100%;
+	}
+
+	button{
+		white-space: nowrap;
+		width: 300px;
+		height: 200px;
+		font-size: 300%;
+	}
+
+	.button{
+		margin-left: 20%;
+	}
+
+	.text{
+		font-size: 150%;
+	}
+}
