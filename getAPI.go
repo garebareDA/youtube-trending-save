@@ -7,7 +7,7 @@ import(
 	"log"
 )
 
-const getURL = "https://www.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&regionCode=JP&maxResults=25&key=AIzaSyC5c1_8hCDurafkaCFkZgpGhn0wV-CSegY"
+const getURL = "https://www.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&regionCode=JP&maxResults=25&key=token"
 
 func getYoutubeTrending() {
 
